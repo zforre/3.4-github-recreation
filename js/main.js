@@ -1,16 +1,14 @@
 $(document).ready(function() {
 
-  
-
-  // let user = $.ajax( "https://api.github.com/users/zforre" )
-  //   .done((resp) => {
-  //     console.log(resp.login);
-  //   })
-  //   .fail((err) => {
-  //     console.log(err);
-  //   })
-  //   .always(()=> {
-  //     console.log('always fires');
-  //   });
+  $.ajax(`https://api.github.com/users/zforre?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`)
+  .done((resp) => {
+    // updateRepos(resp);
+  })
+  .fail((err) => {
+    console.log(err);
+  })
+  .always(() => {
+    console.log('always fires');
+  });
 
 });
