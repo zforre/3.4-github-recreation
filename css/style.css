@@ -20,6 +20,26 @@ body {
   background-color: lightgreen;
   height: 600px; }
 
+.Header {
+  z-index: 32;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #24292e; }
+
+.avatar {
+  border: 1px solid #e1e4e8;
+  border-bottom: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle; }
+
 .fullName {
   font-size: 26px;
   line-height: 30px; }
