@@ -42,8 +42,8 @@ $(document).ready(function() {
     datatype: "jsonp",
     method: "GET",
     success: function(response) {
-      console.log("SUCCESS", response);
-      add(response);
+    console.log("SUCCESS", response);
+    add(response);
     }
   });
 
@@ -55,6 +55,25 @@ $(document).ready(function() {
     let html = template(context);
     $('#repos').html(html);
   }
+
+  // $.ajax({
+  //   url: `https://api.github.com/users/zforre/orgs?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`,
+  //   datatype: "jsonp",
+  //   method: "GET",
+  //   success: function(response) {
+  //   console.log("SUCCESS", response);
+  //   add(response);
+  //   }
+  // });
+  //
+  // function add(response) {
+  //   console.log("hello orgs")
+  //   let source = $('#orgs-script').html();
+  //   let template = Handlebars.compile(source);
+  //   let context = response;
+  //   let html = template(context);
+  //   $('#orgs').html(html);
+  // }
 
 
 
